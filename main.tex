@@ -1,3 +1,4 @@
+% !TeX program = xelatex
 \documentclass[letter,11pt]{article}
 
 \usepackage[utf8]{inputenc}
@@ -12,7 +13,8 @@
 \usepackage{fontspec}
 \usepackage{graphicx}
 
-\setmainfont{Arial}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Calibri}
 \geometry{left=2.5cm, right=2.5cm, top=5cm, headsep=2.5cm}
 \pagestyle{fancy}
 
@@ -30,14 +32,7 @@
     \section*{1. Identificación}
     \identificacion
 
-    % ---------------------------------------------------
-
-    \section*{2. Descripción}
-    \descripcion
-    
-    % ---------------------------------------------------
-
-    \section*{3. Competencias a desarrollar}
+   \section*{2. Competencias a desarrollar}
     \input{competencias}
 
     % ---------------------------------------------------
