@@ -1,0 +1,80 @@
+% estructuras.tex
+
+\newcommand{\identificacion}{
+    \begin{table}[ht]
+        \centering
+        \setlength{\extrarowheight}{5pt}
+        \begin{tabularx}{\textwidth}{|X|X|X|X|}
+            \hline
+            \textbf{Nombre} & \multicolumn{3}{l|}{\nombreCurso} \\
+            \hline
+            \textbf{Código} & \multicolumn{3}{l|}{\codigoCurso} \\
+            \hline
+            \textbf{Créditos} & \multicolumn{3}{l|}{\creditos} \\
+            \hline
+            \textbf{Año} & {\anio} 
+            & \textbf{Ciclo Académico} & {\ciclo} \\
+            \hline
+            \textbf{Requisitos} & 
+            %Si no hay requisitos solo poner \variosItems
+            \multicolumn{3}{l|}{\requisitos} \\
+            \hline
+            \textbf{Modalidad} & \multicolumn{3}{l|}{\modalidades} \\
+            \hline
+            \textbf{Elaborado} & {\fechaCreacion} 
+            & \textbf{Modificado} & {\fechaModificacion} \\
+            \hline
+        \end{tabularx}
+    \end{table}
+}
+
+\newcommand{\prereqlist}{}
+\newcommand{\addprereq}[1]{%
+  \ifx\prereqlist\empty
+    \def\prereqlist{#1}%
+  \else
+    \edef\prereqlist{\prereqlist, #1}%
+  \fi
+}
+
+\NewDocumentCommand{\variosItems}{O{Ninguno}}{%
+  \ifx\relax#1\relax
+    Ninguno%
+  \else
+    \def\prereqlist{}%
+    \forcsvlist{\addprereq}{#1}%
+    \prereqlist
+  \fi
+}
+
+\newcommand{\competencia}[4]{
+    \begin{table}[htbp!]
+        \centering
+        \begin{tabularx}{\textwidth}{|X|}
+            \hline
+            \textbf{Competencia:} #1 \\  % Title
+            \hline
+        \end{tabularx}
+        \begin{tabularx}{\textwidth}{|X|p{5cm}|p{5cm}|}
+            \multicolumn{1}{|c|}{\textbf{Saberes conceptuales}} & \multicolumn{1}{c|}{\textbf{Saberes procedimentales}} & \multicolumn{1}{c|}{\textbf{Saberes actitudinales}} \\
+            \hline
+            \begin{itemize}[noitemsep, topsep=0pt, left=0pt, labelsep=5pt, partopsep=0pt]
+                \fontsize{10pt}{11pt}\selectfont
+                #2
+            \end{itemize} 
+            & 
+            \begin{itemize}[noitemsep, topsep=0pt, left=0pt, labelsep=5pt, partopsep=0pt]
+                \fontsize{10pt}{11pt}\selectfont
+                #3
+            \end{itemize} 
+            & 
+            \begin{itemize}[noitemsep, topsep=0pt, left=0pt, labelsep=5pt, partopsep=0pt]
+                \fontsize{10pt}{11pt}\selectfont
+                #4
+            \end{itemize} 
+            \\
+            \hline
+        \end{tabularx}
+    \end{table}  
+}
+

@@ -1,0 +1,106 @@
+% variables.tex
+
+% Información general
+\newcommand{\facultad}{Facultad de Ingeniería}
+\newcommand{\departamento}{Ciencia de la Computación y Tecnologías de la información}
+\newcommand{\nombreCurso}{Nombre Curso}
+\newcommand{\codigoCurso}{cc1234}
+\newcommand{\creditos}{4}
+\newcommand{\anio}{2024}
+\newcommand{\ciclo}{2}
+\newcommand{\fechaCreacion}{1/7/2024}
+\newcommand{\fechaModificacion}{1/7/2024}
+\newcommand{\descripcion}{
+Descripción del curso
+}
+\newcommand{\requisitos}{\variosItems[Requisito 1, Requisito 2, Requisito n ]}
+\newcommand{\modalidades}{\variosItems[Modalidad 1, Modalidad 2, Modalidad n]}
+
+
+% Metodologías
+\newcommand{\metodologias}{
+    \begin{enumerate}[label=\Alph*.]
+        \item Aprendizaje basado en proyectos.
+        \item Autoaprendizaje.
+        \item Aprendizaje entre pares.
+        \item Aprendizaje basado en clase invertida.
+        \item Aprendizaje basado en design thinking.
+    \end{enumerate}
+}
+
+% Reglas de evaluación
+\newcommand{\reglasEvaluacion}{
+    \begin{enumerate}[label=\Alph*.]
+        \item La evaluación del curso es sobre el 100\% de zona. Para aprobar el curso es necesario obtener una nota mínima de 61 puntos en total y un mínimo de 80\% de asistencia.
+        \item La cantidad de actividades y sus fechas son fijas. No se permite realizar trabajos adicionales para recuperación de puntos.
+        \item En caso de ausencia justificada (con la documentación o evidencia que la respalde), es responsabilidad del/de la estudiante notificar a su docente dentro de los siguientes 5 días hábiles de realizada la actividad perdida, de lo contrario tendrá una nota de cero en dicha actividad.
+        \item Todas las actividades deben ser entregadas únicamente a través del sistema de administración de aprendizaje vigente en la UVG (Canvas) para ser calificadas.
+    \end{enumerate}
+}
+
+%Docentes
+\newcommand{\listaDocentes}{
+    \begin{table}[htbp!]
+        \centering
+        \setlength{\extrarowheight}{5pt}
+        \begin{tabularx}{\textwidth}{|c|X|X|c|}
+        \hline
+        \textbf{Sección} & \textbf{Nombre} & \textbf{Correo Electrónico} & \textbf{Salón} \\
+        \hline
+        10 & Profesor 1 & \href{mailto:profesor1@uvg.edu.gt}{profesor1@uvg.edu.gt} & J-104 \\
+        \hline
+        20 & Profesor 2 & \href{mailto:profesor2@uvg.edu.gt}{profesor2@uvg.edu.gt} & J-105 \\
+        \hline
+        \end{tabularx}
+        \label{tab:docentes}
+    \end{table}
+}
+
+% Bibliografía
+\newcommand{\bibliografia}{
+    \begin{enumerate}[label=\Alph*.]
+        \item Canvas: \url{https://uvg.instructure.com} Curso: CC2005
+        \item Codecademy. (n.d.). Python course catalog. Codecademy. \url{https://www.codecademy.com/catalog/language/python}
+        \item Downey, Allen. \textit{Think Python: How to Think Like a Computer Scientist}. Learning with Python. ISBN 13:9780521898119. \url{http://www.thinkpython.com}. Versión electrónica 3
+        \item Gonzáles Duque, Raúl. \textit{Python para todos}. \url{http://mundogeek.net/tutorial-python/}
+        \item Rice, John K. \& Rice. John R. \textit{Introduction to Computer Science}. Holt, Rinehart and Winston Inc. SBN: 03-067525-1.
+        \item Pandas Development Team. (n.d.). pandas documentation. pandas Documentation. \url{https://pandas.pydata.org/docs/}
+        \item Streamlit. (n.d.). Cheat sheet. Streamlit Documentation. \url{https://docs.streamlit.io/develop/quick-reference/cheat-sheet}
+        \item Universidad del Valle de Guatemala. (n.d.). Reglamento UVG-13. \url{https://res.cloudinary.com/webuvg/image/upload/v1541189810/WEB/Nosotros/reglamentos/Reg-uvg-13.pdf}
+    \end{enumerate}
+}
+
+% Responsabilidades de estudiantes
+\newcommand{\responsabilidadesEstudiantes}{
+    \begin{enumerate}[label=\Alph*.]
+        \item Muestra disciplina y orden en la solución de problemas.
+        \item Actúa éticamente en las actividades del curso.
+        \item Demuestra responsabilidad en la entrega de trabajos asignados.
+        \item Es constante en su asistencia a clase.
+        \item Participa activamente en las discusiones de los temas.
+        \item Respeta las ideas de otros.
+        \item Asume responsabilidades en un equipo de trabajo.
+        \item Iniciativa, motivación y actitud positiva para enfrentar los retos que se le presenten.
+    \end{enumerate}
+}
+
+\newcommand{\recomendacionesEstudiantes}{
+    \begin{enumerate}[label=\Alph*.]
+        \item Responsabilidad Académica: los estudiantes son responsables de la preparación y presentación del trabajo que representa sus esfuerzos. La aceptación de esta responsabilidad es esencial para el proceso
+    educativo y debe ser considerada como una expresión de confianza mutua; que es la fundación sobre la cual descansa la escolaridad creativa. Los estudiantes deben ejercer mucho cuidado en todo trabajo
+    escrito con el uso del lenguaje y dar reconocimiento total a las fuentes de ideas que no sean propias.
+        \item Política sobre colaboración: en todas las actividades se permite discutir los requerimientos de los problemas y el material de apoyo con cualquier persona. Se sugiere evitar ver programas fuente de terceros
+    para evitar que el producto final sea semejante o igual al de otro compañero. Recuerde que los resultados finales deben ser el producto de su propio trabajo.
+        \item La política de la Universidad del Valle de Guatemala respecto a copia, fraude o cualquier tipo de anomalía en las actividades es la siguiente:
+        \subitem i) ”Artículo 18. Durante la realización de un examen los estudiantes tienen prohibido hacer consultas o comunicarse entre sí, en cualquier forma, así como recurrir a apuntes, libros o dispositivos
+    electrónicos; salvo en los casos en que, por el tipo y características de la prueba, haya autorización expresa del docente.”
+        \subitem ii) ”Artículo 19. Si un estudiante comete faltas a la ética en las actividades de evaluación, en cualesquiera de las iniciativas académicas de su malla curricular, el docente calificará con cero el procedimiento
+    de evaluación y procederá a reportar a su Director y a su Decano. El Director le informará al Director del estudiante y al Decano, en caso estas autoridades fueran diferentes.
+    El plagio es considerado una falta de honestidad académica y será analizado, caso por caso. El docente calificará con cero la actividad de evaluación. Si el estudiante reincide reprobará la iniciativa
+    académica y el Director de departamento en el que está inscrito le hará un llamado de atención con copia a su expediente. Asimismo, el estudiante deberá realizar una actividad de reflexión.”
+        \item La entrega de documentos electrónicos, en las actividades que así lo requieran, será por medio de la plataforma de aprendizaje (LMS) de la universidad (Canvas). No se recibirá ningún medio magnético de
+    almacenamiento. Cualquier entrega electrónica cuyo contenido presente corrupción o malware no será calificada.
+        \item Evite distraer a la clase o interrumpir las lecciones. Esto incluye mantener su micrófono apagado mientras no necesite comunicar algo a la clase (en el caso de clases remotas). También se refiere a prevenir
+    interrupciones con aplicaciones o dispositivos y, en el caso de clases presenciales, distracciones aromáticas o auditivas por el consumo de alimentos.
+    \end{enumerate}
+}
