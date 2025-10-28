@@ -1,19 +1,20 @@
 % variables.tex
 
 % Información general
+% Sección de identificación
 \newcommand{\facultad}{Facultad de Ingeniería}
 \newcommand{\departamento}{Ciencia de la Computación y Tecnologías de la información}
 \newcommand{\nombreCurso}{Nombre Curso}
 \newcommand{\codigoCurso}{cc1234}
 \newcommand{\creditos}{4}
-\newcommand{\anio}{2024}
+\newcommand{\anio}{2025}
 \newcommand{\ciclo}{2}
 \newcommand{\teoria}{2}
 \newcommand{\practica}{2}
 \newcommand{\total}{2}
 \newcommand{\horario}{Lunes y Miércoles 8:00 - 10:00}
 \newcommand{\fechaCreacion}{1/7/2024}
-\newcommand{\fechaModificacion}{1/7/2024}
+\newcommand{\fechaModificacion}{1/06/2025}
 
 \newcommand{\descripcion}{
 Descripción del curso
@@ -23,46 +24,37 @@ Descripción del curso
 
 
 % Metodologías
-\newcommand{\metodologias}{
-    \begin{enumerate}[label=\Alph*.]
-        \item Aprendizaje basado en proyectos.
-        \item Autoaprendizaje.
-        \item Aprendizaje entre pares.
-        \item Aprendizaje basado en clase invertida.
-        \item Aprendizaje basado en design thinking.
-    \end{enumerate}
+% Defina las metodologías activas que se utilizarán en el curso. Para marcar una metodología, 
+%ponga una X entre los corchetes antes del texto de la metodología.
+
+\newcommand{\opc}[2][]{\makebox[\linewidth]{#2\hfill(\,#1\,)}}
+\newcommand{\metodologiasActivas}{%
+  \setlength{\tabcolsep}{8pt}%
+  \renewcommand{\arraystretch}{1.2}%
+  \noindent\begin{tabularx}{\textwidth}{|X|X|}
+    \hline
+    \multicolumn{2}{|l|}{\textbf{METODOLOGÍAS ACTIVAS SUGERIDAS (Marque con una X)}} \\ \hline
+    % Ponga [X] antes de la llave para marcar la casilla que desee
+    %Ejemplo: \opc[X]{Aprendizaje basado en proyectos}
+    \opc{Aprendizaje basado en estudio de casos} & \opc{Aprendizaje basado en investigación} \\ \hline
+    \opc{Aprendizaje situado (in situ)} & \opc{Aprendizaje por descubrimiento o heurístico} \\ \hline
+    \opc{Autoaprendizaje} & \opc{Aprendizaje entre pares} \\ \hline
+    \opc{Aprendizaje basado en clase invertida} & \opc{Aprendizaje basado en retos} \\ \hline
+    \opc{Aprendizaje basado en gamificación} & \opc{Aprendizaje basado en design thinking} \\ \hline
+    \multicolumn{2}{|p{\dimexpr\textwidth-2\tabcolsep-2\arrayrulewidth\relax}|}%
+    {\textbf{Otra (especifique):}\par\vspace{2.5cm}} \\ \hline
+
+  \end{tabularx}%
 }
 
-% Reglas de evaluación
-\newcommand{\reglasEvaluacion}{
-    \begin{enumerate}[label=\Alph*.]
-        \item La evaluación del curso es sobre el 100\% de zona. Para aprobar el curso es necesario obtener una nota mínima de 61 puntos en total y un mínimo de 80\% de asistencia.
-        \item La cantidad de actividades y sus fechas son fijas. No se permite realizar trabajos adicionales para recuperación de puntos.
-        \item En caso de ausencia justificada (con la documentación o evidencia que la respalde), es responsabilidad del/de la estudiante notificar a su docente dentro de los siguientes 5 días hábiles de realizada la actividad perdida, de lo contrario tendrá una nota de cero en dicha actividad.
-        \item Todas las actividades deben ser entregadas únicamente a través del sistema de administración de aprendizaje vigente en la UVG (Canvas) para ser calificadas.
-    \end{enumerate}
-}
 
-%Docentes
-\newcommand{\listaDocentes}{
-    \begin{table}[htbp!]
-        \centering
-        \setlength{\extrarowheight}{5pt}
-        \begin{tabularx}{\textwidth}{|c|X|X|c|}
-        \hline
-        \textbf{Sección} & \textbf{Nombre} & \textbf{Correo Electrónico} & \textbf{Salón} \\
-        \hline
-        10 & Profesor 1 & \href{mailto:profesor1@uvg.edu.gt}{profesor1@uvg.edu.gt} & J-104 \\
-        \hline
-        20 & Profesor 2 & \href{mailto:profesor2@uvg.edu.gt}{profesor2@uvg.edu.gt} & J-105 \\
-        \hline
-        \end{tabularx}
-        \label{tab:docentes}
-    \end{table}
-}
 
 % Bibliografía
+% Tomar en cuenta Bibliografía que se encuentra en la Biblioteca UVG y publicaciones o investigaciones realizadas en UVG. 
+
 \newcommand{\bibliografia}{
+    \noindent\setlength{\fboxsep}{10pt}\fbox{%
+    \parbox{\textwidth}{%
     \begin{enumerate}[label=\Alph*.]
         \item Canvas: \url{https://uvg.instructure.com} Curso: CC2005
         \item Codecademy. (n.d.). Python course catalog. Codecademy. \url{https://www.codecademy.com/catalog/language/python}
@@ -73,39 +65,7 @@ Descripción del curso
         \item Streamlit. (n.d.). Cheat sheet. Streamlit Documentation. \url{https://docs.streamlit.io/develop/quick-reference/cheat-sheet}
         \item Universidad del Valle de Guatemala. (n.d.). Reglamento UVG-13. \url{https://res.cloudinary.com/webuvg/image/upload/v1541189810/WEB/Nosotros/reglamentos/Reg-uvg-13.pdf}
     \end{enumerate}
+     }%
+  }%
 }
 
-% Responsabilidades de estudiantes
-\newcommand{\responsabilidadesEstudiantes}{
-    \begin{enumerate}[label=\Alph*.]
-        \item Muestra disciplina y orden en la solución de problemas.
-        \item Actúa éticamente en las actividades del curso.
-        \item Demuestra responsabilidad en la entrega de trabajos asignados.
-        \item Es constante en su asistencia a clase.
-        \item Participa activamente en las discusiones de los temas.
-        \item Respeta las ideas de otros.
-        \item Asume responsabilidades en un equipo de trabajo.
-        \item Iniciativa, motivación y actitud positiva para enfrentar los retos que se le presenten.
-    \end{enumerate}
-}
-
-\newcommand{\recomendacionesEstudiantes}{
-    \begin{enumerate}[label=\Alph*.]
-        \item Responsabilidad Académica: los estudiantes son responsables de la preparación y presentación del trabajo que representa sus esfuerzos. La aceptación de esta responsabilidad es esencial para el proceso
-    educativo y debe ser considerada como una expresión de confianza mutua; que es la fundación sobre la cual descansa la escolaridad creativa. Los estudiantes deben ejercer mucho cuidado en todo trabajo
-    escrito con el uso del lenguaje y dar reconocimiento total a las fuentes de ideas que no sean propias.
-        \item Política sobre colaboración: en todas las actividades se permite discutir los requerimientos de los problemas y el material de apoyo con cualquier persona. Se sugiere evitar ver programas fuente de terceros
-    para evitar que el producto final sea semejante o igual al de otro compañero. Recuerde que los resultados finales deben ser el producto de su propio trabajo.
-        \item La política de la Universidad del Valle de Guatemala respecto a copia, fraude o cualquier tipo de anomalía en las actividades es la siguiente:
-        \subitem i) ”Artículo 18. Durante la realización de un examen los estudiantes tienen prohibido hacer consultas o comunicarse entre sí, en cualquier forma, así como recurrir a apuntes, libros o dispositivos
-    electrónicos; salvo en los casos en que, por el tipo y características de la prueba, haya autorización expresa del docente.”
-        \subitem ii) ”Artículo 19. Si un estudiante comete faltas a la ética en las actividades de evaluación, en cualesquiera de las iniciativas académicas de su malla curricular, el docente calificará con cero el procedimiento
-    de evaluación y procederá a reportar a su Director y a su Decano. El Director le informará al Director del estudiante y al Decano, en caso estas autoridades fueran diferentes.
-    El plagio es considerado una falta de honestidad académica y será analizado, caso por caso. El docente calificará con cero la actividad de evaluación. Si el estudiante reincide reprobará la iniciativa
-    académica y el Director de departamento en el que está inscrito le hará un llamado de atención con copia a su expediente. Asimismo, el estudiante deberá realizar una actividad de reflexión.”
-        \item La entrega de documentos electrónicos, en las actividades que así lo requieran, será por medio de la plataforma de aprendizaje (LMS) de la universidad (Canvas). No se recibirá ningún medio magnético de
-    almacenamiento. Cualquier entrega electrónica cuyo contenido presente corrupción o malware no será calificada.
-        \item Evite distraer a la clase o interrumpir las lecciones. Esto incluye mantener su micrófono apagado mientras no necesite comunicar algo a la clase (en el caso de clases remotas). También se refiere a prevenir
-    interrupciones con aplicaciones o dispositivos y, en el caso de clases presenciales, distracciones aromáticas o auditivas por el consumo de alimentos.
-    \end{enumerate}
-}

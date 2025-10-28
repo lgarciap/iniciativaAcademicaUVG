@@ -12,6 +12,8 @@
 \usepackage{geometry}
 \usepackage{fontspec}
 \usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
 
 \defaultfontfeatures{Ligatures=TeX}
 \setmainfont{Calibri}
@@ -28,45 +30,48 @@
 \begin{document}
 
     % ---------------------------------------------------
+    % Llene los valores de las variables en la sección de variables.tex
+    % ---------------------------------------------------
 
     \section*{1. Identificación}
     \identificacion
 
+    % ---------------------------------------------------
+    % Seleccione máximo 3 de las 12 competencias genéricas y borre las demás en la subsección de competencias genéricas en el archivo competencias.tex
+    % Defina las competencias específicas del curso en la subsección de competencias específicas en el archivo competencias.tex
+    % ---------------------------------------------------
    \section*{2. Competencias a desarrollar}
     \input{competencias}
 
     % ---------------------------------------------------
-
-    \section*{4. Metodologías activas para la enseñanza y el aprendizaje}
-    \metodologias
+    % Marque con una X las metodologías activas que se utilizarán en el curso en la sección de variables.tex
+    % Si desea agregar otra metodología, escríbala en el espacio provisto.
+    % Esto lo puede hacer en el archivo variables.tex
+    % ---------------------------------------------------
+    \section*{3. Metodologías activas para la enseñanza y el aprendizaje}
+    \metodologiasActivas
 
     % ---------------------------------------------------
+    % Determine los criterios de evaluación del curso en el archivo evaluacion.tex
+    % ---------------------------------------------------
 
-    \section*{5. Evaluación}
-    \reglasEvaluacion
-
+    \section*{4. Evaluación}
     \input{evaluacion}
+
+    
     % ---------------------------------------------------
-    
-    \newpage
-    \section*{6. Docentes}
-    \listaDocentes
-    
+    % Determine el cronograma del curso en el archivo cronograma.tex
     % ---------------------------------------------------
 
-    \section*{7. Bibliografía y fuentes de información}
+    \section*{5. Cronograma}
+    \input{cronograma}
+    
+    % ---------------------------------------------------
+    % Agregue la bibliografía y enlaces web en la sección de variables.tex
+    % ---------------------------------------------------
+
+    \section*{6. Bibliografía y enlaces web}
     \bibliografia
-    
-    % ---------------------------------------------------
-
-
-    \section*{8. Responsabilidades del/la estudiante}
-    \responsabilidadesEstudiantes
-    
-    % ---------------------------------------------------
-
-    \section*{9. Recomendaciones}
-    \recomendacionesEstudiantes
     
     % ---------------------------------------------------
 
