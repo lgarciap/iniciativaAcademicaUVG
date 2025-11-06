@@ -122,10 +122,9 @@ Contiene las competencias **genéricas y específicas**.
 Define la **tabla de criterios de evaluación por competencia**.
 
 #### 🟦 Instrucciones de uso
-1. Cada tabla corresponde a una competencia.  
-2. Edita los criterios y productos dentro de las celdas.  
-3. Los porcentajes deben sumar **100%**.  
-4. El símbolo `•` se agrega antes de “Competencia” automáticamente.
+1. Edita los criterios y productos dentro de las celdas.  
+2. Los porcentajes deben sumar **100%**.  
+3. En  la columna de competencias debe ponerse cuales de las competencias se están evaluando en los productos y desempeños. Puede usar el número de la competencia. 
 
 Ejemplo:
 ```latex
