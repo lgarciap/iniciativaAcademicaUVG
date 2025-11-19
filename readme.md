@@ -99,6 +99,7 @@ Además, define **tablas y secciones reutilizables**:
 Contiene las competencias **genéricas y específicas**.
 
 #### 🟩 Instrucciones de uso
+— Sección 2.2.1 Específicas de la carrera
 1. Elimina las competencias que **no apliquen** al curso.  
 2. Mantén máximo **3 competencias genéricas**.  
 3. Usa numeración manual (`[1.]`, `[2.]`, etc.) para que **no se reordenen automáticamente**.  
@@ -113,9 +114,20 @@ Contiene las competencias **genéricas y específicas**.
 \end{enumerate}
 \end{multicols}
 ```
-
 > 💡 Usa `\setlength{\columnsep}{1.5cm}` para ajustar el espacio entre columnas.
 
+— Sección 2.2.1 Específicas de la carrera
+
+Esta subsección relaciona las **competencias específicas de la carrera** con las **subcompetencias que desarrolla el curso**.  
+Por ejemplo, muestra cómo cada competencia del curso contribuye a las competencias del perfil profesional.
+
+#### 🧩 Instrucciones de uso
+1. **No modifique el formato de la tabla**; solo edita el texto dentro de las celdas.  
+2. Cada fila debe contener:
+   - La **competencia específica de la carrera (CE)**, tomada del plan de estudios.  
+   - La **subcompetencia** del curso que contribuye a desarrollarla.  
+3. Si tu curso no contribuye a alguna competencia CE, puedes **eliminar esa fila**.  
+4. Si tu curso contribuye a más competencias, puedes **duplicar una fila** manteniendo el formato.
 ---
 
 ### 🧮 `evaluacion.tex`
