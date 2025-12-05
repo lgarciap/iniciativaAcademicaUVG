@@ -18,7 +18,7 @@ Facilitar la generación de programas académicos normalizados, con:
 
 ### 1️⃣ Clona o descarga este repositorio
 ```bash
-git clone https://github.com/tuusuario/plantilla-silabo.git
+git clone https://github.com/lgarciap/iniciativaAcademicaUVG.git
 ```
 
 ### 2️⃣ Compila el archivo principal
@@ -31,7 +31,7 @@ Esto garantiza compatibilidad con la fuente Calibri.
   xelatex main.tex
   ```
 
-El resultado será `main.pdf` — tu sílabo completo.
+El resultado será `main.pdf` — tu PIA completo.
 
 ---
 
