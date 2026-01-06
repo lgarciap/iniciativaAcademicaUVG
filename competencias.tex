@@ -4,69 +4,100 @@
 \subsection*{2.1 Genéricas}
 % Seleccione máximo 3 de las 12 competencias genéricas que se listan a continuación y borre las demás.
 % Si quiere ponerlo en 1 columna comente las líneas de \begin{multicols}{2} y \end{multicols}.
-\begin{multicols}{2}
+
     \begin{enumerate}[label={}]
-        \item[1.] Piensa de manera crítica y analítica.
-        \item[2.] Se comunica con efectividad.
         \item[3.] Trabaja en equipo.
         \item[4.] Resuelve problemas de manera creativa y efectiva.
         \item[5.] Utiliza adecuadamente la tecnología.
-        \item[6.] Ejerce liderazgo.
-        \item[7.] Actúa éticamente.
-        \item[8.] Investiga en diferentes áreas del conocimiento.
-        \item[9.] Practica la adaptabilidad en entornos cambiantes.
-        \item[10.] Aprende a aprender autónomamente.
-        \item[11.] Actúa en forma emprendedora e innovadora.
-        \item[12.] Asume una postura intercultural y global.
     \end{enumerate}
-\end{multicols}
+
 
 
 
 \subsection*{2.2 Específicas}
 % Defina las competencias específicas del curso. Para cada competencia, liste los saberes conceptuales, procedimentales y actitudinales que se desarrollarán en el curso.
 % Si su curso tiene más de 3 competencias específicas, copie y pegue el bloque de código de la competencia las veces que sea necesario.
-\competencia{Competencia 1}{
-    \item Saber conceptual 1.
-    \item Saber conceptual 2.
-    \item Saber conceptual n.
+\competencia{Aplica conocimientos básicos de estadísticas para, luego de comprender el problema planteado, seleccione la mejor técnica a utilizar para resolverlo.}{
+    \item Comprensión de las variables de estudio.
+    \item Estadística descriptiva
+    \item Análisis exploratorio.
+    \item Reconocimiento de la variable respuesta.
 }{
-    \item Saber procedimental 1.
-    \item Saber procedimental 2.
-    \item Saber procedimental n.
+    \item Realiza un análisis de las variables del conjunto de datos.
+    \item Reconoce la variable respuesta y las variables que aportan más al modelo que se desea obtener.
+    \item Utiliza la estadística descriptiva para resumir las características principales de un conjunto de datos.
+    \item Emplea técnicas de análisis exploratorio para identificar patrones, detectar anomalías y probar hipótesis con la ayuda de herramientas computacionales.
 }{
-    \item Saber actitudinal 1.
-    \item Saber actitudinal 2.
-    \item Saber actitudinal n.
+    \item Demuestra concentración, paciencia y persistencia en las actividades que realiza.
+    \item Manifiesta disciplina y orden en la solución de problemas.
 }
 
 
-\competencia{Competencia 2}{
-    \item Saber conceptual 1.
-    \item Saber conceptual 2.
-    \item Saber conceptual n.
+\competencia{Analiza el problema a resolver para aplicar la técnica de aprendizaje automático más adecuada para su resolución.}{
+    \item Aplicaciones del aprendizaje automático para la resolución de problemas.
+    \item Tipos de aprendizaje automático (supervisado, no supervisado, semi-supervisado y por refuerzo )
+    \item Construcción de modelos de aprendizaje automático.
+    \item Indicadores de rendimiento de modelos de aprendizaje automático: exploratorios y predictivos.
+    \begin{itemize}
+        \item Métricas de evaluación para modelos de clasificación.
+        \item Métricas de evaluación para modelos de regresión.
+        \item Relación sesgo-varianza.
+    \end{itemize}
+    \item Técnicas para evitar sobreajuste: 
+    \begin{itemize}
+        \item Validación Cruzada
+        \item Remuestreo (Bootstrap)
+    \end{itemize}
+   
 }{
-    \item Saber procedimental 1.
-    \item Saber procedimental 2.
-    \item Saber procedimental n.
+    \item Determina la técnica de aprendizaje automático a utilizar dada la situación planteada.
+    \item Selecciona los modelos y algoritmos adecuados para resolver el problema.
+    \item Plantea indicadores de rendimiento de los distintos algoritmos estudiados para seleccionar el mejor modelo.
 }{
-    \item Saber actitudinal 1.
-    \item Saber actitudinal 2.
-    \item Saber actitudinal n.
+    \item Demuestra concentración, paciencia y persistencia en las actividades que realiza.
+    \item Manifiesta disciplina y orden en la solución de problemas.
+    \item Posee iniciativa, motivación y actitud positiva para enfrentar los retos que se le presenten.
+    \item Tiene disposición para comunicarse efectivamente y asumir responsabilidades en un equipo de trabajo.
 }
 
-\competencia{Competencia 3}{
-    \item Saber conceptual 1.
-    \item Saber conceptual 2.
-    \item Saber conceptual n.
+\competencia{Implementa algoritmos de aprendizaje automático utilizando modelos predictivos y clasificatorios según sea el caso.}{
+    \item Algoritmos de aprendizaje no supervisados: 
+    \item \begin{itemize}
+        \item Clustering: K-means, clustering jerárquico, Mixture of Gaussians.
+        \item Reglas de asociación: Apriori
+        \item Reducción de dimensionalidad: PCA
+        \item Otros algoritmos no supervisados: SVD, t-SNE, UMAP, ICA 
+    \end{itemize} 
+    \item Algoritmos de aprendizaje supervisados:
+    \begin{itemize}
+        \item Regresión lineal
+        \item Regresión logística.
+        \item Árboles de decisión y Random Forest.
+        \item Máquinas de vectores de soporte (SVM).
+        \item Redes neuronales artificiales.
+        \item Bayes ingenuo.
+        \item K-vecinos más cercanos (KNN).
+    \end{itemize}
+    \item Algoritmos de aprendizaje semisupervisados:   
+    \begin{itemize}
+        \item Self-training
+        \item Co-training
+        \item Propagación
+        \item SVM semi supervisado
+        \item Generativos
+        \item k-means con restricciones
+        \item Laplacian SVM.
+    \end{itemize} 
 }{
-    \item Saber procedimental 1.
-    \item Saber procedimental 2.
-    \item Saber procedimental n.
+    \item Aplica algoritmos de minería de datos en data sets de la vida real.
+    \item Utiliza las principales características de cada algoritmo para identificar qué tipo de algoritmo debe de utilizarse en cada situación.
+    \item Diseña programas y soluciones donde utilizan uno o varios algoritmos de aprendizaje automático para resolver un problema.
+    \item Determina la eficiencia del algoritmo para el problema planteado
 }{
-    \item Saber actitudinal 1.
-    \item Saber actitudinal 2.
-    \item Saber actitudinal n.
+ \item Demuestra concentración, paciencia y persistencia en las actividades que realiza.
+    \item Manifiesta disciplina y orden en la solución de problemas.
+    \item Posee iniciativa, motivación y actitud positiva para enfrentar los retos que se le presenten.
+    \item Tiene disposición para comunicarse efectivamente y asumir responsabilidades en un equipo de trabajo.
 }
 
 
@@ -79,7 +110,8 @@
         \hline
          \multicolumn{1}{|c|}{\textbf{Competencia Específica de la Carrera}} & 
          \multicolumn{1}{c|}{\textbf{Subcompetencias desarrolladas en el curso}} \\ \hline 
-         CE15: Organizar y depurar los datos provenientes de fuentes diversas, estructuradas y no estructuradas y/o en grandes volúmenes (“big data”) para que puedan ser analizados.& Competencia 1 \\ \hline 
-         CE16: Analizar datos empleando algoritmos y herramientas de aprendizaje de máquina yminería de datos.& Competencia 2 \\ \hline 
+         CE12. Desarrollar algoritmos inteligentes con la representación y mecanismo de razonamientos adecuados en contextos específicos.& Implementa algoritmos de aprendizaje automático utilizando modelos predictivos y clasificatorios según sea el caso. \\ \hline 
+         CE13. Evaluar los algoritmos inteligentes más adecuados para problemas específicos.& Analiza el problema a resolver para aplicar la técnica de aprendizaje automático más adecuada para su resolución. \\ \hline 
+         CE16. Analizar datos empleando algoritmos y herramientas de aprendizaje de máquina y minería de datos.& Aplica conocimientos básicos de estadísticas para, luego de comprender el problema planteado, seleccione la mejor técnica a utilizar para resolverlo. \\ \hline 
     \end{tabularx}
 \end{table}
